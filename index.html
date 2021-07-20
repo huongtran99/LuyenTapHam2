@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện Tập Tạo Và Sử Dụng Hàm 2</title>
+</head>
+<body>
+<script>
+    // Bài 1: Viết hàm tính bình phương của một số bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.
+    /*    let number = parseInt(prompt("Nhập 1 số bất kì"));
+
+        function numberSquare(number) {
+            return Math.pow(number, 2);
+        }
+
+        let result = numberSquare(number);
+        console.log(result);*/
+
+    // Bài 2: Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được.
+    /*    let r = parseInt(prompt("Nhập vào bán kính"))
+
+        function circleArea(r) {
+            return Math.PI * Math.pow(r, 2);
+        }
+
+        function circlePerimeter(r) {
+            return Math.PI * 2 * r;
+        }
+
+        let area = circleArea(r);
+        let perimeter = circlePerimeter(r);
+        console.log("chu vi hình tròn là: " + perimeter);
+        console.log("diện tích hình tròn là: " + area);*/
+
+    /* Bài 3: Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.*/
+
+    /*    let number = parseInt(prompt("Nhập số nguyên bất kỳ"));
+        function factorial(number) {
+            if(number == 2) {
+                return 2;
+            }
+            return number * factorial(number - 1);
+        }
+
+        let result = factorial(number);
+        console.log(result);*/
+
+    /*    function giaiThua() {
+            let n = parseInt(prompt("Enter a number: "));
+            let g = n;
+            for(let i = 1; i < n; i++){
+                g *= i;
+            }
+            if(n == 0){
+                return g = 1;
+            }
+            return g;
+        }
+        let a = giaiThua();
+        console.log("giai thua: " + a);*/
+
+    /*    Bài 4: Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không.
+            Nếu là ký tự số hàm trả về true, ngược lại trả về false.*/
+
+    /*    let numberChar = parseInt(prompt("Nhập vào 1 kí tự"));
+
+        function check(numberChar) {
+            if(!isNaN(numberChar)){
+                return true;
+            }
+            return false;
+        }
+
+        let result = check(numberChar);
+        console.log(result);*/
+
+    // Bài 5: Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.
+
+    /*    let num1 = parseInt(prompt("Nhập vào số thứ 1"));
+        let num2 = parseInt(prompt("Nhập vào số thứ 2"));
+        let num3 = parseInt(prompt("Nhập vào số thứ 3"));
+
+        function myFunction(a, b, c) {
+            let min = a;
+            if (b <= a) {
+                min = b;
+                if (c <= b) {
+                    min = c;
+                    return min;
+                }
+            } else if (c <= a) {
+                min = c;
+                return min;
+            }
+            return min;
+        }
+
+        let result = myFunction(num1, num2, num3);
+        console.log(result);*/
+
+
+    /*     Bai 6:Viết hàm nhận vào một số, kiểm tra xem nếu số đưa vào có phải là nguyên dương không.
+         Nếu là nguyên dương trả về true, ngược lại trả về false.*/
+
+    /*        let number = parseInt(prompt("Enter a number"));
+            function kTraNgDuong(number) {
+                if (number >= 0) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+
+            let result = kTraNgDuong(number);
+            console.log(result);*/
+
+    // Bài 7: Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.
+
+    /*        function soNguyen(a, b) {
+                let temp;
+                temp = a;
+                a = b;
+                b = temp;
+                return "a = " + a + " , " + "b = " + b;
+            }
+
+            let a = parseInt(prompt("Nhập a"));
+            let b = parseInt(prompt("Nhập b"));
+            let result = soNguyen(a, b);
+            console.log(result);*/
+
+    //Bài 8: Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó.
+
+    /*    let n = parseInt(prompt("Nhập độ dài của mảng"));
+        let arr = [];
+        for (let i = 0; i < n; i++) {
+            arr[i] = parseInt(prompt("nhập vào phần tử thứ : " + i));
+        }
+
+        function arrNguyen(arr) {
+            arr.reverse();
+            return arr;
+        }
+
+        let result = arrNguyen(arr);
+        console.log(result);*/
+
+    /*    Bài 9: Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ,
+            kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không.
+            Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1.*/
+
+/*    let number = parseInt(prompt("Nhập vào độ dài của mảng"));
+    let arr = [];
+    for (let i = 0; i < number; i++) {
+        arr[i] = prompt("Nhập phần tử thứ : " + i);
+    }
+    let char = prompt("Nhập vào kí tự để ktra");
+
+    function checkChar(arr, char) {
+        let count = 0;
+        console.log("Ktra kí tự: " + char);
+        console.log(arr);
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === char) {
+                count++;
+            }
+        }
+        if (count === 0) {
+            return -1;
+        }
+        return count;
+    }
+
+    let result = checkChar(arr, char);
+    console.log("Số lần xuất hiện của " + char + " là :" + result);*/
+
+</script>
+</body>
+</html>
